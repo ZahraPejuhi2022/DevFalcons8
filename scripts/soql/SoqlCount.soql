@@ -1,0 +1,7 @@
+SELECT count() from Contact 
+
+select leadsource, count(name) from lead group by leadsource
+
+select name, count(id) from account group by name having count(id)>0
+
+select sum(amount), stageName from apportunity where isClosed group by stageName

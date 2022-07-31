@@ -1,0 +1,9 @@
+select id, name, Project_Name__c from salesforce_project__c
+
+Select id, name, phone from account WHERE (phone != NULL or website != NULL) and AccountNumber != NULL
+
+select id, name, CreatedDate from Account Where createdDate = LAST_90_DAYS ORDER BY CreatedDate DESC
+
+select name, industry from account where industry
+
+select id, name, CreatedDate from Account ORDER BY CreatedDate DESC Limit 1
